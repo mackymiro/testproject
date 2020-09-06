@@ -9,7 +9,7 @@
     <title>@yield('title') {{ config('app.name', 'Test Project') }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"  crossorigin="anonymous">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"  >
 
 
     <style>
@@ -42,6 +42,4 @@
 
 @yield('content')
 
-<script src="{{ asset('js/jquery-3.5.1.slim.min.js') }}" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="{{ asset('js/bootstrap.bundle.min.js') }}" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
 </html>

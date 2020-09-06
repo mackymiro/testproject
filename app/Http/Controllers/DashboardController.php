@@ -3,9 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comment;
 
 class DashboardController extends Controller
 {
+
+    public function addComments(Request $request){
+        $addComments = new Comment([
+            'date'=>$request->date,
+            'name'=>$request->yourName,
+            'comments'=>$request->comments,
+        ]);
+
+        $addComments->save();
+        $insertedId = $addComments->id;
+
+        return response()->json($insertedId);
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -16,3 +16,8 @@
 //});
 
 Route::get('/', 'DashboardController@index')->name('dashboard');
+
+Route::post(
+    '/dashboard/add-comments',
+    'DashboardController@addComments')
+    ->name('addComments');
